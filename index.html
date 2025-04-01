@@ -3,23 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Website</title>
+    <title>Roblox AirAsia</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
-        }
-        h1 {
             text-align: center;
+        }
+        header {
+            background-color: #d71a28;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            display: inline-block;
+            border-radius: 50%;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .main-content {
+            padding: 100px 20px 50px;
+        }
+        .btn {
+            background-color: #d71a28;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #b71522;
         }
     </style>
 </head>
 <body>
-    <h1>airasia holy joe</h1>
+    <header>
+        <div class="logo"></div>
+        <h1>Roblox AirAsia</h1>
+        <ul class="nav-links">
+            <li><a href="book.html">Book a Flight</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    
+    <div class="main-content">
+        <h2>Welcome to Roblox AirAsia</h2>
+        <p>Your journey begins here. Book your flights easily and travel seamlessly.</p>
+        <button class="btn" onclick="window.location.href='book.html'">Book Now</button>
+    </div>
 </body>
 </html>
+
+<!-- book.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book a Flight</title>
+</head>
+<body>
+    <h1>Book a Flight</h1>
+    <p>Find the best deals and book your next adventure.</p>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
+
+
